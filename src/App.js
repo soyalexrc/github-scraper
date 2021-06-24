@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useContext, Suspense, lazy } from 'react'
+import Header from './containers/Header'
+import Loader from './components/Loader'
 
-function App() {
+import { Router, Redirect } from '@reach/router'
+import { Context } from './Context'
+
+const UserResume = lazy(() => import('./pages/UserResume'))
+const RepoDetail = lazy(() => import('./pages/RepoDetail'))
+const NotFound = lazy(() => import('./pages/NotFound'))
+const EntryPoint = lazy(() => import('./pages/EntryPoint'))
+
+export const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Suspense fallback={<Loader/>}>
+      <Header/>
+      <Router>
+        <NotFound default />
+        <EntryPoint path='/' />
+        <UserResume path='/home' />
+        <RepoDetail path='/repo/:id' />
+      </Router>
+    </Suspense>
   );
 }
-
-export default App;
