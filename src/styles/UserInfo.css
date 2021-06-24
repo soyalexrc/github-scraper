@@ -55,14 +55,20 @@ h1 {
     color: #f6f8fa;
 }
 
-h2 {
-    font-family: 'SF Mono, Fira Code, Fira Mono, Roboto Mono, Lucida Console, Monaco, monospace';
+.title {
+    font-family: Inter,system,-apple-system,BlinkMacSystemFont,Roboto,Segoe UI,Arial,sans-serif;
+    color: white;
+    font-size: 3rem!important;
+}
+
+ h2 {
+    font-family: SF Mono, Fira Code, Fira Mono, Roboto Mono, Lucida Console, Monaco, monospace;
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
 }
 
-h2 > a {
-    color: #0070f3;
+.sub-title > a {
+    color: #0070f3!important; ;
 }
 
 .user-detail a {

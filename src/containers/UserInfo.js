@@ -16,11 +16,11 @@ const UserInfo = ({userData}) => {
                 </div>
               )}
 
-            {userData.name && <h2>{userData.name}</h2>}
+            {userData.name && <h2 className='title'>{userData.name}</h2>}
 
             {
               userData.login && (
-                <h2>
+                <h2 className='sub-title'>
                   <a href={userData.html_url} target='_blank' rel='noopener noreferrer'>
                     @{userData.login}
                   </a>
@@ -75,6 +75,6 @@ const UserInfo = ({userData}) => {
       }
     </section>
   );
-};
+}
 
 export default UserInfo;

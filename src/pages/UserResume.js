@@ -5,7 +5,7 @@ import RateLimit from '../components/RateLimit';
 import Error from '../components/Error';
 import UserInfo from "../containers/UserInfo";
 import Repositories from "../containers/Repositories";
-import Graphics from "../containers/Graphics";
+import Graphics from "../containers/Graphics.js";
 import Corner from "../components/Corner";
 
 const UserResume = props => {
