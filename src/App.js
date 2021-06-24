@@ -1,9 +1,7 @@
-import React, { useContext, Suspense, lazy } from 'react'
-import Header from './containers/Header'
+import React, { Suspense, lazy } from 'react'
 import Loader from './components/Loader'
 
-import { Router, Redirect } from '@reach/router'
-import { Context } from './Context'
+import { Router } from '@reach/router'
 
 const UserResume = lazy(() => import('./pages/UserResume'))
 const RepoDetail = lazy(() => import('./pages/RepoDetail'))
@@ -14,7 +12,6 @@ const EntryPoint = lazy(() => import('./pages/EntryPoint'))
 const App = () => {
   return (
     <Suspense fallback={<Loader/>}>
-      <Header/>
       <Router>
         <NotFound default />
         <EntryPoint path='/' />

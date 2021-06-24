@@ -1,8 +1,9 @@
 import React from 'react';
+import '../styles/Error.css'
 
 const Error = ({error}) => {
   return (
-    <div>
+    <div className='error'>
       {
         error && (
           <div>

@@ -1,11 +1,12 @@
 import React from 'react';
+import '../styles/RateLimit.css';
 
 const RateLimit = ({rateLimit}) => {
   return (
-    <div>
+    <main className='rate-limit'>
       {rateLimit && (
-        <div>
-          <div>
+        <div className='limit'>
+          <div className='num'>
             {`${rateLimit.remaining} / ${rateLimit.limit}`}
           </div>
           <p>requests Left</p>
@@ -13,7 +14,7 @@ const RateLimit = ({rateLimit}) => {
       )
 
       }
-    </div>
+    </main>
   );
 };
 

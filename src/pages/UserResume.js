@@ -3,10 +3,10 @@ import GhPolyglot from 'gh-polyglot';
 
 import RateLimit from '../components/RateLimit';
 import Error from '../components/Error';
-import Header from '../containers/Header';
-import UserStatsBox from "../components/userStatsBox";
+import UserInfo from "../containers/UserInfo";
 import Repositories from "../containers/Repositories";
 import Graphics from "../containers/Graphics";
+import Corner from "../components/Corner";
 
 const UserResume = props => {
   const username = props.id;
@@ -91,9 +91,9 @@ const UserResume = props => {
         <Error error={error}/>
       ) : (
         <>
-          <Header/>
+          <Corner/>
 
-          {userData && <UserStatsBox userData={userData}/>}
+          {userData && <UserInfo userData={userData}/>}
 
           {langData && repoData && <Graphics langData={langData} repoData={repoData}/>}
 

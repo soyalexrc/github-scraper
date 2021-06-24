@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import { FaGithub } from 'react-icons/fa'
 import '../styles/EntryPoint.css'
 import { navigate } from "@reach/router";
-import Context from '../Context'
 
 const EntryPoint = () => {
   const [user, setUser] = useState('');
@@ -19,7 +18,7 @@ const EntryPoint = () => {
           }}
         >
           <FaGithub size={100}/>
-          <label for="username">Find your Profile</label>
+          <label htmlFor='username'>Find your Profile</label>
           <input name="username" type="text" onChange={handleInputChange}/>
         </form>
 
