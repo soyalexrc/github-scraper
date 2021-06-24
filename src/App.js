@@ -10,7 +10,10 @@ const RepoDetail = lazy(() => import('./pages/RepoDetail'))
 const NotFound = lazy(() => import('./pages/NotFound'))
 const EntryPoint = lazy(() => import('./pages/EntryPoint'))
 
+
 const App = () => {
+
+
 
   return (
     <Suspense fallback={<Loader/>}>
@@ -25,4 +28,7 @@ const App = () => {
   );
 }
 
+
 export default App
+
+
