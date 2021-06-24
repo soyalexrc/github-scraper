@@ -12,16 +12,13 @@ const EntryPoint = lazy(() => import('./pages/EntryPoint'))
 
 
 const App = () => {
-
-
-
   return (
     <Suspense fallback={<Loader/>}>
       <Header/>
       <Router>
         <NotFound default />
         <EntryPoint path='/' />
-        <UserResume path='/home' />
+        <UserResume path='/user/:id' />
         <RepoDetail path='/repo/:id' />
       </Router>
     </Suspense>
