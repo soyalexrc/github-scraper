@@ -1,0 +1,108 @@
+.dropdown {
+    position: relative;
+    width: 100px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.dropdown__button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    text-align: left;
+    color: #0070f3;
+    background-color: transparent;
+    border: 1px solid rgba(0, 118, 255, 0.1);
+    padding: 10px 7px;
+    border-radius: 5px;
+}
+
+.dropdown__button:hover, .dropdown__button:focus {
+    color: #0070f3;
+    background: rgba(0, 118, 255, 0.1);
+    border-color: rgba(0, 118, 255, 0.1);
+}
+
+.dropdown__button > svg {
+    margin-left: 0.5rem;
+    margin-bottom: 0;
+}
+
+.dropdown__button > label {
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.dropdown__list {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    z-index: 2;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 5px 30px -15px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    background-color: #f6f8fa;
+
+}
+
+.dropdown__list--item {
+    border-radius: 0;
+    transition: all 0.2s ease-in-out;
+    list-style: none;
+}
+
+.dropdown__list--item:hover, .dropdown__list--item:focus {
+    background-color: #c8e1ff;
+}
+
+.dropdown__list--item:first-of-type > button {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.dropdown__list--item:last-of-type > button {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.dropdown__list--item > button {
+    color: #0070f3;
+    background: rgba(0, 118, 255, 0.1);
+    padding: 10px 7px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    text-align: left;
+    border: none;
+}
+
+.dropdown__list--active {
+    opacity: 1;
+    visibility: visible;
+    padding: 0;
+    margin: 0;
+    border: none;
+    z-index: 2;
+}
+
+.dropdown__button--active {
+    background: rgba(0, 118, 255, 0.1);
+    border: none;
+    width: 100%;
+    display: flex;
+    padding: 10px 7px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.svg--active {
+    transform: rotate(0.5turn);
+    margin-bottom: 0;
+}
+
+

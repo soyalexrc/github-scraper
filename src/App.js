@@ -15,8 +15,8 @@ const App = () => {
       <Router>
         <NotFound default />
         <EntryPoint path='/' />
-        <UserResume path='/user/:id' />
-        <RepoDetail path='/repo/:id' />
+        <UserResume path='/user/:username' />
+        <RepoDetail path='repo/:repo' />
       </Router>
     </Suspense>
   );

@@ -9,12 +9,13 @@ import Graphics from "../containers/Graphics.js";
 import Corner from "../components/Corner";
 
 const UserResume = props => {
-  const username = props.id;
+  const username = props.username;
   const [userData, setUserData] = useState(null);
   const [langData, setLangData] = useState(null);
   const [repoData, setRepoData] = useState(null);
   const [error, setError] = useState({active: false, type: 200});
   const [rateLimit, setRateLimit] = useState(null);
+
 
   const getUserData = () => {
     fetch(`https://api.github.com/users/${username}`)
@@ -27,7 +28,9 @@ const UserResume = props => {
         }
         return response.json();
       })
-      .then(json => setUserData(json))
+      .then(json => {
+        setUserData(json)
+      })
       .catch(error => {
         setError({active: true, type: 400});
         console.error('Error:', error);
@@ -46,7 +49,9 @@ const UserResume = props => {
         }
         return response.json();
       })
-      .then(json => setRepoData(json))
+      .then(json => {
+        setRepoData(json)
+      })
       .catch(error => {
         setError({active: true, type: 200});
         console.error('Error:', error);
@@ -66,10 +71,6 @@ const UserResume = props => {
     getUserData();
     getLangData();
     getRepoData();
-
-    // setUserData(mockUserData);
-    // setLangData(mockLangData);
-    // setRepoData(mockRepoData);
   }, []);
 
   const getLangData = () => {

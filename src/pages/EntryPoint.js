@@ -4,15 +4,23 @@ import '../styles/EntryPoint.css'
 import { navigate } from "@reach/router";
 
 const EntryPoint = () => {
+  const defaultUser = 'alexrodriguez2498'
   const [user, setUser] = useState('');
-  const handleInputChange = e => setUser(e.target.value)
-  const guestDefaultUser = () => navigate('user/alexrodriguez2498')
+  const handleInputChange = e => {
+    sessionStorage.setItem('username', e.target.value)
+    setUser(e.target.value)
+  }
+  const guestDefaultUser = () => {
+    sessionStorage.setItem('username', defaultUser)
+    navigate(`user/${defaultUser}`)
+  }
 
   return (
     <div className={'entry-point'}>
       <div className='text-center'>
         <form
           onSubmit={e => {
+            sessionStorage.removeItem('username')
             e.preventDefault();
             navigate(`user/${user}`)
           }}
