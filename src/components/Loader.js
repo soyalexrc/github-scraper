@@ -4,7 +4,7 @@ import '../styles/Loader.css';
 
 const LoaderScreen = () => {
   return (
-      <Loader type='pacman' active/>
+    <Loader type='pacman' active/>
   );
 };
 
