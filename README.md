@@ -1,70 +1,73 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Github Scraper
 
-## Available Scripts
+**Github Scraper** is a personal project that shows information about every github repo you pass into it. Fetching data from Github API, rendering beautiful graphics from github stats with  Gh Polyglot and Chart.js, sorting repos by stars, sizes and forks with React Flip Move. 
+
+ >###Note 
+> the main feature of this project is to be able to see the all the commits from a specific repository, right now it is not realtime but it could be in the future.
+
+## Instructions for FULLTIMEFORCE
+
+1. Run `npm install` to install the dependencies.
+2. Run `npm start` to initialize the development server (this is an SPA, there is no frontend)
+3. Check `localhost:3000` on your browser to see the project running.
+4. In `'/'` route, you have two options:
+    -  An input to search for any github repository and see the stats, repo info, commits from that profile. Just put the name of the github profile and hit the `enter` button.
+    -  Below the input you will see a `button` with `Are you a guest?` text on it. This button start the flow of the app with my personal information from github (if you don't have a github account or just if you want to see the current repo and commits of Github Scraper)
+5. The current repo is named `github-scraper`, you will see it below teh graphics and there you could see all the commits i made on it, and the exact date and time of every commit pushed.    
+6. Click in the commit icon to see more description about every commit
+7. Enjoy it!
+
+## Links
+
+- [Repo](https://github.com/Rohit19060/<project-name> "<project-name> Repo")
+
+- [Bugs](https://github.com/alexrodriguez2498/github-scraper/issues "Issues Page")
+
+- [API](<https://docs.github.com/en/rest> "API")
+
+## Screenshots
+
+![Home Page](/src/assets/github-scraper-capture.PNG "Home Page")
+
+![Commit Section](/src/assets/commit-capture.PNG "Commit Section") 
+
+## Available Commands
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm install`
+Install all the dependencies related to this project, necessary to run the code successfully. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### `npm start" : "react-scripts start"`,
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The app is built using `create-react-app` so this command Runs the app in Development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser. 
 
-### `npm test`
+### `"npm run build": "react-scripts build"`,
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance. The build is minified and the filenames include the hashes. Your app will be ready to deploy!
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Built With
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- React
+- React Flip Move
+- Gg Polyglot
+- Chart Js
+- Bootstrap
+- Github API v3
+- CSS
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Author
 
-### `npm run eject`
+**Alex Rodriguez**
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- [Profile](https://github.com/alexrodriguez2498 "Alex Rodriguez")
+- [Email](mailto:alexcarvajal2404@gmail.com?subject=Hi "Hi!")
+- [Website](https://alexrodriguez.dev "Welcome")
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🤝 Support
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Contributions, issues, and feature requests are welcome!
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Give a ⭐️ if you like this project!

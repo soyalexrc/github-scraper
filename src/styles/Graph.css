@@ -1,0 +1,26 @@
+.graph {
+    background-color: #FFFFFF;
+    max-width: 500px;
+    padding: 2rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 5px 30px -15px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header > h2 {
+    font-size: 1.5rem;
+}
+
+p {
+    color: #586069;
+}
+
+@media (max-width: 400px) {
+    .graph {
+        padding: 2rem 1rem;
+    }
+}

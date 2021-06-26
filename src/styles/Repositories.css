@@ -1,0 +1,287 @@
+.repositories-container {
+    padding: 3rem 5rem;
+}
+
+.dropdown-wrapper {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #6a737d;
+}
+
+.dropdown-wrapper > label {
+    margin: 0 1rem;
+}
+
+.repositories {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    justify-content: start!important;
+}
+
+.repositories > .dropdown-wrapper {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #6a737d;
+}
+
+.label {
+    margin: 0 1rem!important;
+}
+
+.repo-list > ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+    list-style: none;
+    padding: 0;
+}
+/*repo box*/
+
+.repo {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 2rem;
+    height: 100%;
+    text-decoration: none;
+    color: #586069;
+    background-color: #FFFFFF;
+    border-radius: 0.25rem;
+    box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.2);
+    transition: all 200ms cubic-bezier(0.23, 1, 0.32, 1) 0s;
+}
+
+.repo:hover, .repo-list > ul > li>  .repo:focus {
+    box-shadow: 0 8px 20px -15px rgba(0, 0, 0, 0.2);
+}
+
+.repo h3 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #24292e;
+    margin-bottom: 0.75rem;
+    font-size: 20px;
+    font-family: SF Mono, Fira Code, Fira Mono, Roboto Mono, Lucida Console, Monaco, monospace;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+.repo p {
+    font-size: 14px;
+    margin-bottom: 2rem;
+}
+
+.repo__top {
+    margin-bottom: 2rem;
+}
+
+.repo__name {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.repo__name > svg {
+    margin-right: 0.5rem;
+    margin-bottom: 0;
+    min-width: 16px;
+}
+
+.repo__name > h3 {
+    margin: 0!important;
+}
+
+.repo__stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #6a737d;
+}
+
+.repo__stats--left {
+    flex-grow: 1;
+    display: flex;
+}
+
+.repo__stats--left > span {
+    display: flex;
+    align-items: center;
+    margin-right: 0.75rem;
+}
+
+.repo__stats--left > span > svg {
+    margin-right: 0.25rem;
+    margin-bottom: 0;
+}
+
+.repo__stats--left > span > .language {
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+    margin-right: 0.25rem;
+}
+
+
+/*repo box*/
+
+/*dropdown*/
+#dropdown-button-dark-example2 {
+    color: #0070f3;
+    background-color: rgba(0,118,255,0.1);
+    border-color: rgba(0,118,255,0.1);
+}
+
+.dropdown {
+    position: relative;
+    width: 100px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.dropdown__button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 14px!important;
+    font-weight: 500;
+    line-height: 1;
+    text-align: left;
+    color: #0070f3;
+    background-color: transparent;
+    border: 1px solid rgba(0, 118, 255, 0.1);
+    padding: 10px 7px;
+    border-radius: 5px;
+}
+
+.dropdown__button:hover, .dropdown__button:focus {
+    color: #0070f3;
+    background: rgba(0, 118, 255, 0.1);
+    border-color: rgba(0, 118, 255, 0.1);
+}
+
+.dropdown__button > svg {
+    margin-left: 0.5rem;
+    margin-bottom: 0;
+}
+
+.dropdown__button > label {
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.dropdown__list {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 5px 30px -15px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    background-color: #f6f8fa;
+    z-index: 999;
+
+}
+
+.dropdown__list--item {
+    border-radius: 0;
+    transition: all 0.2s ease-in-out;
+    list-style: none;
+    z-index: 999;
+}
+
+.dropdown__list--item:hover, .dropdown__list--item:focus {
+    background-color: #c8e1ff;
+}
+
+.dropdown__list--item:first-of-type > button {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.dropdown__list--item:last-of-type > button {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.dropdown__list--item > button {
+    color: #0070f3;
+    background: rgba(0, 118, 255, 0.1);
+    padding: 10px 7px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    text-align: left;
+    border: none;
+}
+
+.dropdown__list--active {
+    opacity: 1;
+    visibility: visible;
+    padding: 0;
+    margin: 0;
+    border: none;
+    z-index: 999;
+}
+
+.dropdown__button--active {
+    background: rgba(0, 118, 255, 0.1);
+    border: none;
+    width: 100%;
+    display: flex;
+    padding: 10px 7px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.svg--active {
+    transform: rotate(0.5turn);
+    margin-bottom: 0;
+}
+
+
+
+
+/*dropdown*/
+
+
+header > h2 {
+    display: inline-block;
+    margin: 0 ;
+    font-size: 1.75rem;
+    background-image: linear-gradient(90deg, #d1d5da 50%, hsla(0, 0%, 100%, 0) 0);
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-size: 10px 2px;
+    padding-bottom: 6px;
+}
+
+@media (max-width: 900px) {
+    .repositories-container {
+        padding: 2rem;
+    }
+}
+@media (max-width: 400px) {
+    .repositories-container {
+        padding: 1rem;
+    }
+}
+@media (max-width: 600px) {
+    header > h2 {
+        font-size: 1.5rem;
+    }
+
+    .repo-list > ul > li > .repo {
+        padding: 1.5rem;
+    }
+}

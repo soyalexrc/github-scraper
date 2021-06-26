@@ -1,0 +1,29 @@
+.error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    padding-bottom: 20vh;
+    font-size: 1.5rem;
+    background-color: #1A1E22;
+    background-image: linear-gradient(#1A1E22 0%, #24292e 100%);
+    color: #f6f8fa;
+}
+
+svg {
+    color: #0070f3;
+    margin-bottom: 3rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+a {
+    color: #c8e1ff;
+}
+
+a:hover, a:focus {
+    text-animation: underline;
+}

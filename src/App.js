@@ -1,9 +1,7 @@
-import React, { useContext, Suspense, lazy } from 'react'
-import Header from './containers/Header'
-import Loader from './components/Loader'
+import React, {lazy, Suspense} from 'react'
+import LoaderScreen from './components/Loader'
 
-import { Router, Redirect } from '@reach/router'
-import { Context } from './Context'
+import {Router} from '@reach/router'
 
 const UserResume = lazy(() => import('./pages/UserResume'))
 const RepoDetail = lazy(() => import('./pages/RepoDetail'))
@@ -12,17 +10,13 @@ const EntryPoint = lazy(() => import('./pages/EntryPoint'))
 
 
 const App = () => {
-
-
-
   return (
-    <Suspense fallback={<Loader/>}>
-      <Header/>
+    <Suspense fallback={<LoaderScreen/>}>
       <Router>
-        <NotFound default />
-        <EntryPoint path='/' />
-        <UserResume path='/home' />
-        <RepoDetail path='/repo/:id' />
+        <NotFound default/>
+        <EntryPoint path='/'/>
+        <UserResume path='/user/:username'/>
+        <RepoDetail path='repo/:repo'/>
       </Router>
     </Suspense>
   );

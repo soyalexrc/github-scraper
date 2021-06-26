@@ -1,0 +1,30 @@
+.graphics__container {
+    padding: 3rem 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.graphics {
+    max-width: 1200px !important;
+    margin-top: -8rem !important;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 2rem;
+    justify-content: center;
+}
+
+@media(max-width: 900px) {
+    .graphics__container {
+        padding: 2rem;
+    }
+
+    .graphics {
+        justify-items: center;
+    }
+}
+
+@media (max-width: 400px) {
+    .graphics__container {
+        padding: 1rem;
+    }
+}

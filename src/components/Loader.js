@@ -1,11 +1,11 @@
 import React from 'react';
+import Loader from 'react-loaders';
+import '../styles/Loader.css';
 
-const Loader = () => {
+const LoaderScreen = () => {
   return (
-    <div>
-
-    </div>
+    <Loader type='pacman' active/>
   );
 };
 
-export default Loader;
+export default LoaderScreen;

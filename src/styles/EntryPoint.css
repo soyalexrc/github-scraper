@@ -1,0 +1,71 @@
+.entry__point {
+    display: grid;
+    place-items: center;
+    place-content: center;
+    min-height: 100vh;
+    background-color: #1A1E22;
+    background-image: linear-gradient(#1A1E22 0%, #24292e 100%);
+    color: white;
+}
+
+input {
+    background-color: #26303c;
+    outline: 0;
+    border: 0;
+    border-radius: 0.25rem;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1rem;
+    color: #79b8ff;
+    font-family: SF Mono, Fira Code, Fira Mono, Roboto Mono, Lucida Console, Monaco, monospace;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+label {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin: 2rem;
+}
+
+.divider{
+    display: flex;
+    align-items: center;
+    margin: 3rem 0;
+    color: white;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    height: 1px;
+    background-color: silver;
+    flex-grow: 1;
+}
+
+.divider::before {
+    margin-right: 1rem;
+}
+
+.divider::after {
+    margin-left: 1rem;
+}
+
+.guest__button {
+    background-color: #26303c;
+    color: white;
+    font-family: SF Mono, Fira Code, Fira Mono, Roboto Mono, Lucida Console, Monaco, monospace;
+    font-size: 1.5rem;
+    font-weight: 300;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    border: none;
+}
+
+.guest__button:hover {
+    color: #26303c;
+    background-color: white;
+}
