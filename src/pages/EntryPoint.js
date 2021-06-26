@@ -20,7 +20,6 @@ const EntryPoint = () => {
       <div className='text-center'>
         <form
           onSubmit={e => {
-            sessionStorage.removeItem('username')
             e.preventDefault();
             navigate(`user/${user}`)
           }}
