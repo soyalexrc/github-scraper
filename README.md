@@ -54,7 +54,6 @@ Builds the app for production to the `build` folder. It correctly bundles React 
 - React Flip Move
 - Gg Polyglot
 - Chart Js
-- Bootstrap
 - Github API v3
 - CSS
 
