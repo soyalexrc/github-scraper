@@ -1,7 +1,12 @@
 .loader__screen {
-    display: grid;
-    place-items: center;
-    place-content: center;
-    background-color: black;
-    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    padding-bottom: 20vh;
+    font-size: 1.5rem;
+    background-color: #1A1E22;
+    background-image: linear-gradient(#1A1E22 0%, #24292e 100%);
+    color: #f6f8fa;
 }

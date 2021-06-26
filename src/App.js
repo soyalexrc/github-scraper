@@ -11,7 +11,7 @@ const EntryPoint = lazy(() => import('./pages/EntryPoint'))
 
 const App = () => {
   return (
-    <Suspense fallback={<LoaderScreen/>}>
+    <Suspense fallback={<LoaderScreen delay={10000}/>}>
       <Router>
         <NotFound default/>
         <EntryPoint path='/'/>
