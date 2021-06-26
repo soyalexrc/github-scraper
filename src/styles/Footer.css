@@ -1,0 +1,28 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6a737d;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.footer > a {
+    padding: 5px;
+}
+
+.footer > a:hover, .footer > a:focus {
+    text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+    .footer {
+        padding: 2rem;
+    }
+}
+@media (max-width: 400px) {
+    .footer {
+        padding: 1rem;
+    }
+}

@@ -3,7 +3,7 @@ import '../styles/RateLimit.css';
 
 const RateLimit = ({rateLimit}) => {
   return (
-    <main className='rate-limit'>
+    <main className='rate__limit'>
       {rateLimit && (
         <div className='limit'>
           <div className='num'>

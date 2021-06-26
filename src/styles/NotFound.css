@@ -1,0 +1,37 @@
+.not-found {
+    display: grid;
+    place-content: center;
+    place-items: center;
+    height: 100vh;
+}
+
+.not-found > h1 {
+    font-size: 7rem;
+}
+
+.go-back {
+    background-color: #26303c;
+    color: white;
+    font-family: SF Mono, Fira Code, Fira Mono, Roboto Mono, Lucida Console, Monaco, monospace;
+    font-size: 1.5rem;
+    font-weight: 300;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    border: none;
+}
+
+.go-back:hover {
+    color: #26303c;
+    background-color: white;
+}
+
+@media (max-width: 900px) {
+    .not-found > h1 {
+        font-size: 5rem;
+    }
+}
+@media (max-width: 600px) {
+    .not-found > h1 {
+        font-size: 3rem;
+    }
+}

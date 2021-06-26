@@ -12,7 +12,7 @@ const UserInfo = ({userData}) => {
             {
               userData.avatar_url && (
                 <div className='avatar'>
-                  <img src={userData.avatar_url} width='150px' alt="avatar"/>
+                  <img src={userData.avatar_url} className='user-image' alt="avatar"/>
                 </div>
               )}
 

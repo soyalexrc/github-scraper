@@ -91,11 +91,11 @@ const Graphics = ({ langData, repoData }) => {
   const thirdChartError = !(thirdChartData && thirdChartData.length > 0);
 
   return (
-    <section className='graphics-container'>
+    <section className='graphics__container'>
       <div className="graphics">
-        <Graph name='Top Languages' langChartError={langChartError} id='langChart' size={chartSize}/>
-        <Graph name='Most Starred' langChartError={langChartError} id='starChart' size={chartSize}/>
-        <Graph name='Stars per Language' langChartError={langChartError} id='thirdChart' size={chartSize}/>
+        <Graph name='Top Languages' chartError={langChartError} id='langChart' size={chartSize}/>
+        <Graph name='Most Starred' chartError={starChartError} id='starChart' size={chartSize}/>
+        <Graph name='Stars per Language' chartError={thirdChartError} id='thirdChart' size={chartSize}/>
       </div>
     </section>
   );

@@ -1,13 +1,11 @@
 import React, {useEffect, useState} from 'react';
 import langColors from '../utils/langColors';
 import FlipMove from 'react-flip-move';
-// import DropDown from "../components/Dropdown";
 import '../styles/Repositories.css'
 import {GoRepo} from "react-icons/go";
 import {AiFillStar} from "react-icons/ai";
 import {BiGitRepoForked} from "react-icons/bi";
 import {Link} from "@reach/router";
-import {IoMdArrowDropdown} from "react-icons/io";
 import {Dropdown, DropdownButton} from "react-bootstrap";
 
 const Repositories = ({repoData}) => {
@@ -62,9 +60,6 @@ const Repositories = ({repoData}) => {
               className="bs-dropdown"
             >
               {sortTypes.map((type, i) => (
-                // <li className="dropdown__list--item" key={i}>
-                //   <button onClick={() => changeRepoSort(type)}>{type}</button>
-                // </li>
                 <Dropdown.Item key={i} onClick={() => changeRepoSort(type)}>
                   {type}
                 </Dropdown.Item>
@@ -80,7 +75,6 @@ const Repositories = ({repoData}) => {
             <FlipMove typeName="ul">
               {topRepos.map(repo => (
                 <li key={repo.id}>
-                  {/*<RepoBox langColors={langColors} repo={repo}/>*/}
                   <Link to={`/repo/${repo.name}`} className="repo">
                     <div className="repo__top">
                       <div className="repo__name">

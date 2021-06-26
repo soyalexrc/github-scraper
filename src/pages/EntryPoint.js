@@ -16,7 +16,7 @@ const EntryPoint = () => {
   }
 
   return (
-    <div className={'entry-point'}>
+    <div className='entry__point'>
       <div className='text-center'>
         <form
           onSubmit={e => {
@@ -30,7 +30,7 @@ const EntryPoint = () => {
         </form>
 
         <p className='divider'>Or</p>
-        <button className='guest-button' onClick={guestDefaultUser}>
+        <button className='guest__button' onClick={guestDefaultUser}>
           <span>
             Are you a Guest?
           </span>

@@ -1,0 +1,7 @@
+.loader__screen {
+    display: grid;
+    place-items: center;
+    place-content: center;
+    background-color: black;
+    z-index: 9999;
+}
