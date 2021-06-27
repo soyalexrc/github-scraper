@@ -19,11 +19,13 @@
 
 ## Links
 
-- [Repo](https://github.com/Rohit19060/<project-name> "<project-name> Repo")
+- [Repo](https://github.com/alexrodriguez2498/github-scraper "<github-scraper> Repo")
+
+- [Live](https://60d8c4437144853a86da140e--github-scraper.netlify.app/ "Live page")
 
 - [Bugs](https://github.com/alexrodriguez2498/github-scraper/issues "Issues Page")
 
-- [API](<https://docs.github.com/en/rest> "API")
+- [API](https://docs.github.com/en/rest "API")
 
 ## Screenshots
 
