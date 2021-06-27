@@ -1,5 +1,4 @@
 import React, {lazy, Suspense} from 'react'
-import LoaderScreen from './components/Loader'
 
 import {Router} from '@reach/router'
 
@@ -11,7 +10,7 @@ const EntryPoint = lazy(() => import('./pages/EntryPoint'))
 
 const App = () => {
   return (
-    <Suspense fallback={<LoaderScreen delay={10000}/>}>
+    <Suspense fallback={<div>Loading...</div>}>
       <Router>
         <NotFound default/>
         <EntryPoint path='/'/>

@@ -14,11 +14,11 @@ const RepoDetail = props => {
   const [error, setError] = useState({active: false, type: 200});
   const [rateLimit, setRateLimit] = useState(null);
 
-  const DecodeDate = (date) => {
-    let dateStr = JSON.parse(date);
-    let resultDate = new Date(dateStr);
-    return resultDate;
-  }
+  // const DecodeDate = (date) => {
+  //   let dateStr = JSON.parse(date);
+  //   let resultDate = new Date(dateStr);
+  //   return resultDate;
+  // }
 
   const getCommits = () => {
     fetch(`https://api.github.com/repos/${username}/${repo}/commits`)
@@ -50,7 +50,7 @@ const RepoDetail = props => {
       });
 
     getCommits()
-  }, []);
+  });
 
   return (
     <div>
@@ -93,11 +93,11 @@ const RepoDetail = props => {
                               )}
                             </div>
                             <div className='commit__bottom--right'>
-                              <a href={commit.html_url} target='_blank'>
+                              <a href={commit.html_url} target='_blank' rel='noreferrer'>
                                 <GoGitCommit />
                               </a>
                               {commit.author && (
-                                <a href={commit.author.html_url} target='_blank'>
+                                <a href={commit.author.html_url} target='_blank' rel='noreferrer'>
                                   <FaGithub />
                                 </a>
                               )}
