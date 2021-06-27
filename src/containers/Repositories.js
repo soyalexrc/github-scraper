@@ -33,7 +33,7 @@ const Repositories = ({repoData}) => {
     if (repoData.length) {
       getTopRepos();
     }
-  }, [getTopRepos, repoData.length]);
+  });
 
   useEffect(() => getTopRepos(sortType), [getTopRepos, sortType]);
 
