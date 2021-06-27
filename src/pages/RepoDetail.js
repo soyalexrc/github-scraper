@@ -32,7 +32,7 @@ const RepoDetail = props => {
         return response.json();
       })
       .then(response => setCommits(response))
-      .then(response => console.log(response))
+      // .then(response => console.log(response))
       .catch(error => {
         setError({active: true, type: 400});
         console.error('Error:', error);
@@ -50,7 +50,7 @@ const RepoDetail = props => {
       });
 
     getCommits()
-  });
+  }, []);
 
   return (
     <div>
@@ -61,7 +61,7 @@ const RepoDetail = props => {
       ) : (
         <>
           <Corner />
-          {console.log(commits)}
+          {/*{console.log(commits)}*/}
 
           {commits !== null && commits !== undefined && (
             <>
