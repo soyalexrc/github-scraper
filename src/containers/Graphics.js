@@ -83,7 +83,7 @@ const Graphics = ({ langData, repoData }) => {
       initStarChart();
       initThirdChart();
     }
-  });
+  }, []);
 
   const chartSize = 300;
   const langChartError = !(langChartData && langChartData.length > 0);

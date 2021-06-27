@@ -71,7 +71,7 @@ const UserResume = props => {
     getUserData();
     getLangData();
     getRepoData();
-  });
+  }, []);
 
   const getLangData = () => {
     const me = new GhPolyglot(`${username}`);

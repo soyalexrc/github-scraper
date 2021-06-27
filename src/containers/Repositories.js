@@ -33,9 +33,9 @@ const Repositories = ({repoData}) => {
     if (repoData.length) {
       getTopRepos();
     }
-  });
+  }, []);
 
-  useEffect(() => getTopRepos(sortType), [getTopRepos, sortType]);
+  useEffect(() => getTopRepos(sortType), [sortType]);
 
   const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
 
