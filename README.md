@@ -1,9 +1,8 @@
 
-## Github Scraper
+<h1 align="center">Github Scraper</h1>
 
 **Github Scraper** is a personal project that shows information about every github repo you pass into it. Fetching data from Github API, rendering beautiful graphics from github stats with  Gh Polyglot and Chart.js, sorting repos by stars, sizes and forks with React Flip Move. 
 
- >###Note 
 > the main feature of this project is to be able to see the all the commits from a specific repository, right now it is not realtime but it could be in the future.
 
 ## Instructions for FULLTIMEFORCE
