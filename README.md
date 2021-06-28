@@ -21,7 +21,7 @@
 
 - [Repo](https://github.com/alexrodriguez2498/github-scraper "<github-scraper> Repo")
 
-- [Live](https://60d8c4437144853a86da140e--github-scraper.netlify.app/ "Live page")
+- [Live](https://github-scraper.netlify.app/ "Live page")
 
 - [Bugs](https://github.com/alexrodriguez2498/github-scraper/issues "Issues Page")
 
