@@ -51,12 +51,22 @@ const UserResume = props => {
       })
       .then(json => {
         setRepoData(json)
-        console.log(json)
       })
       .catch(error => {
         setError({active: true, type: 200});
         console.error('Error:', error);
       });
+  };
+
+    const getLangData = () => {
+      const me = new GhPolyglot(`${username}`);
+      me.userStats((err, stats) => {
+        if (err) {
+          console.error('Error:', err);
+          setError({active: true, type: 400});
+        }
+      setLangData(stats);
+    });
   };
 
   useEffect(() => {
@@ -74,16 +84,7 @@ const UserResume = props => {
     getRepoData();
   }, []);
 
-  const getLangData = () => {
-    const me = new GhPolyglot(`${username}`);
-    me.userStats((err, stats) => {
-      if (err) {
-        console.error('Error:', err);
-        setError({active: true, type: 400});
-      }
-      setLangData(stats);
-    });
-  };
+
 
   return (
     <main>

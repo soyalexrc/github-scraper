@@ -61,8 +61,6 @@ const RepoDetail = props => {
       ) : (
         <>
           <Corner />
-          {/*{console.log(commits)}*/}
-
           {commits !== null && commits !== undefined && (
             <>
               <div className='header'>
