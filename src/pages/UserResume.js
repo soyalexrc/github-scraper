@@ -51,6 +51,7 @@ const UserResume = props => {
       })
       .then(json => {
         setRepoData(json)
+        console.log(json)
       })
       .catch(error => {
         setError({active: true, type: 200});

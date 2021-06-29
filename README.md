@@ -8,7 +8,7 @@
 ## Instructions for FULLTIMEFORCE
 
 1. Run `npm install` to install the dependencies.
-2. Run `npm start` to initialize the development server (this is an SPA, there is no frontend)
+2. Run `npm start` to initialize the development server (this is an SPA, there is no backend)
 3. Check `localhost:3000` on your browser to see the project running.
 4. In `'/'` route, you have two options:
     -  An input to search for any github repository and see the stats, repo info, commits from that profile. Just put the name of the github profile and hit the `enter` button.

@@ -6,6 +6,7 @@ import { navigate } from "@reach/router";
 const EntryPoint = () => {
   const defaultUser = 'alexrodriguez2498'
   const [user, setUser] = useState('');
+
   const handleInputChange = e => {
     sessionStorage.setItem('username', e.target.value)
     setUser(e.target.value)
